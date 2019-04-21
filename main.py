@@ -11,5 +11,6 @@ class message(str):
 
 
 if __name__ == "__main__":
-    msg = message("This is a caesar cypher")
+    m = input("Enter a message: ")
+    msg = message(m)
     print(msg.encrypt())
