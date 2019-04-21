@@ -1,3 +1,4 @@
+# generates words from a sentence
 def words_gen(s):
     s = s.lower()
     s = " "+s+" "
@@ -13,6 +14,7 @@ def words_gen(s):
     words = words[1:]
     return words
 
+# converts words to caesar cipher
 def caesar_gen_words(w):
     l = len(w)
     c = 0
@@ -32,6 +34,7 @@ def caesar_gen_words(w):
         new_w = new_w+ch
     return new_w
 
+# converts sentence to caesar cypher
 def caesar_gen(s):
         words = []
         new_w = ""
@@ -42,6 +45,8 @@ def caesar_gen(s):
             msg = msg + new_w
             msg = msg + " "
         return msg
+
+# converts words back to readable form        
 def gen_msg(w):
     l = len(w)
     c = 0
@@ -61,6 +66,7 @@ def gen_msg(w):
         new_w = new_w+ch
     return new_w
 
+# converts sentence back to readable form
 def final_msg(s):
         words = []
         new_w = ""
