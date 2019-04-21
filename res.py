@@ -42,3 +42,32 @@ def caesar_gen(s):
             msg = msg + new_w
             msg = msg + " "
         return msg
+def gen_msg(w):
+    l = len(w)
+    c = 0
+    new_w=""
+    letters = []
+    while c<l:
+        x = w[c:c+1]
+        letters.append(x)
+        c=c+1
+    for each_element in letters:
+        t = ord(each_element)
+        if t>97 and t<=122:
+            t=t-1
+        elif t==97:
+            t=122
+        ch = chr(t)
+        new_w = new_w+ch
+    return new_w
+
+def final_msg(s):
+        words = []
+        new_w = ""
+        msg = ""
+        words = words_gen(s)
+        for eachWord in words:
+            new_w = gen_msg(eachWord)
+            msg = msg + new_w
+            msg = msg + " "
+        return msg
