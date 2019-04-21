@@ -7,3 +7,9 @@
 
 
 This is a simple python script that encrypts messages using the [caesar cipher](http://www.practicalcryptography.com/ciphers/caesar-cipher/) algorithm
+
+## To Dos:
+
+* Create a program that reverses the encrypted message to readable form.
+
+* Create a GUI application of the program.
