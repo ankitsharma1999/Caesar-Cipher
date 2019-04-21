@@ -1,6 +1,6 @@
 from res import caesar_gen, final_msg
 
-class message(str):
+class message(str):    # class message has all the attributes of string class
     def __init__(self,msg):
         self.msg = msg
     
