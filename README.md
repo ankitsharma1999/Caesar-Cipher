@@ -6,4 +6,4 @@
 ### A Python script implementing the Caesar Cipher
 
 
-This is a simple python script that encrypts meassages using the [caesar cipher](http://www.practicalcryptography.com/ciphers/caesar-cipher/) algorithm
+This is a simple python script that encrypts messages using the [caesar cipher](http://www.practicalcryptography.com/ciphers/caesar-cipher/) algorithm
