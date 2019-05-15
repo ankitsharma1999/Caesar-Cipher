@@ -10,6 +10,6 @@ This is a simple python script that encrypts messages using the [caesar cipher](
 
 ## To Dos:
 
-* ~~Write the algorithm that reverses the encrypted message to readable form.~~
+* [x]Write the algorithm that reverses the encrypted message to readable form.
 
 * Create a GUI application of the program.
