@@ -12,4 +12,4 @@ This is a simple python script that encrypts messages using the [caesar cipher](
 
 - [x] Write the algorithm that reverses the encrypted message to readable form.
 
-- [] Create a GUI application of the program.
+- [ ] Create a GUI application of the program.
