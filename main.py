@@ -1,4 +1,4 @@
-from res import caesar_gen, final_msg
+from res import *
 
 class message(str):    # class message has all the attributes of string class
 
