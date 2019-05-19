@@ -21,7 +21,6 @@ if __name__ == "__main__":
 
     msg = message(m)
 
-
     print("1.Encrypt\n2.Decrypt")
         
     ch = input("Enter your choice(1/2): ")
