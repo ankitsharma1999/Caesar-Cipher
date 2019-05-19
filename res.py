@@ -15,7 +15,8 @@ def words_gen(s):
     return words
 
 # converts words to caesar cipher
-def caesar_gen_words(w, key):
+def caesar_gen_words(w,k):
+    key = int(k)
     l = len(w)
     c = 0
     new_w=""
@@ -25,29 +26,28 @@ def caesar_gen_words(w, key):
         letters.append(x)
         c=c+1
     for each_element in letters:
-        t = ord(each_element)
-        if t>=97 and t<122:
-            t=t+1
-        elif t==122:
-            t=97
-        ch = chr(t)
+        t = ord(each_element)-97
+        t = (t+key)%26
+        ch = chr(t+97)
         new_w = new_w+ch
     return new_w
 
 # converts sentence to caesar cypher
-def caesar_gen(s):
-        words = []
-        new_w = ""
-        msg = ""
-        words = words_gen(s)
-        for eachWord in words:
-            new_w = caesar_gen_words(eachWord)
-            msg = msg + new_w
-            msg = msg + " "
-        return msg
+def caesar_gen(s,k):
+    key = int(k)
+    words = []
+    new_w = ""
+    msg = ""
+    words = words_gen(s)
+    for eachWord in words:
+        new_w = caesar_gen_words(eachWord, key)
+        msg = msg + new_w
+        msg = msg + " "
+    return msg
 
 # converts words back to readable form        
-def gen_msg(w):
+def gen_msg(w,k):
+    key = int(k)
     l = len(w)
     c = 0
     new_w=""
@@ -57,23 +57,21 @@ def gen_msg(w):
         letters.append(x)
         c=c+1
     for each_element in letters:
-        t = ord(each_element)
-        if t>97 and t<=122:
-            t=t-1
-        elif t==97:
-            t=122
-        ch = chr(t)
+        t = ord(each_element)-97
+        t = (t-key)%26
+        ch = chr(t+97)
         new_w = new_w+ch
     return new_w
 
 # converts sentence back to readable form
-def final_msg(s):
-        words = []
-        new_w = ""
-        msg = ""
-        words = words_gen(s)
-        for eachWord in words:
-            new_w = gen_msg(eachWord)
-            msg = msg + new_w
-            msg = msg + " "
-        return msg
+def final_msg(s,k):
+    key = int(k)
+    words = []
+    new_w = ""
+    msg = ""
+    words = words_gen(s)
+    for eachWord in words:
+        new_w = gen_msg(eachWord, key)
+        msg = msg + new_w
+        msg = msg + " "
+    return msg
