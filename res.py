@@ -15,7 +15,7 @@ def words_gen(s):
     return words
 
 # converts words to caesar cipher
-def caesar_gen_words(w):
+def caesar_gen_words(w, key):
     l = len(w)
     c = 0
     new_w=""
