@@ -1,15 +1,16 @@
 from res import caesar_gen, final_msg
 
 class message(str):    # class message has all the attributes of string class
-    def __init__(self,msg):
+    def __init__(self,msg,key):
         self.msg = msg
+        self.key = key
     
 
-    def encrypt(self):
+    def encrypt(self, key):
         new_m = caesar_gen(msg)
         return new_m
     
-    def decrypt(self):
+    def decrypt(self, key):
         new_m = final_msg(msg)
         return new_m
 
