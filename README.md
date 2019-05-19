@@ -12,6 +12,6 @@ This is a simple python script that encrypts messages using the [caesar cipher](
 
 - [x] Write the algorithm that reverses the encrypted message to readable form.
 
-- [ ] Allow the user to choose the number of characters to be shifted.
+- [ ] Add a key.
 
 - [ ] Create a GUI application of the program.
