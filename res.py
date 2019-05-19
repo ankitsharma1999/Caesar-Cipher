@@ -15,8 +15,7 @@ def words_gen(s):
     return words
 
 # converts words to caesar cipher
-def caesar_gen_words(w,k):
-    key = int(k)
+def caesar_gen_words(w,key):
     l = len(w)
     c = 0
     new_w=""
@@ -33,8 +32,7 @@ def caesar_gen_words(w,k):
     return new_w
 
 # converts sentence to caesar cypher
-def caesar_gen(s,k):
-    key = int(k)
+def caesar_gen(s,key):
     words = []
     new_w = ""
     msg = ""
@@ -46,8 +44,7 @@ def caesar_gen(s,k):
     return msg
 
 # converts words back to readable form        
-def gen_msg(w,k):
-    key = int(k)
+def gen_msg(w,key):
     l = len(w)
     c = 0
     new_w=""
@@ -64,8 +61,7 @@ def gen_msg(w,k):
     return new_w
 
 # converts sentence back to readable form
-def final_msg(s,k):
-    key = int(k)
+def final_msg(s,key):
     words = []
     new_w = ""
     msg = ""

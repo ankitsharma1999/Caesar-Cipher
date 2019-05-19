@@ -26,10 +26,10 @@ if __name__ == "__main__":
         
     ch = input("Enter your choice(1/2): ")
     if ch=="1":
-        key = input("Enter the Key: ")
+        key = int(input("Enter the Key: "))
         print(msg.encrypt(key))
     elif ch=="2":
-        key = input("Enter the Key: ")
+        key = int(input("Enter the Key: "))
         print(msg.decrypt(key))
     else:
         print("Enter a valid choice.")
