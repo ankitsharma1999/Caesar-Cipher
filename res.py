@@ -25,10 +25,13 @@ def caesar_gen_words(w,key):
         letters.append(x)
         c=c+1
     for each_element in letters:
+
         t = ord(each_element)-97
         t = (t+key)%26
         ch = chr(t+97)
+
         new_w = new_w+ch
+
     return new_w
 
 # converts sentence to caesar cypher
@@ -38,9 +41,11 @@ def caesar_gen(s,key):
     msg = ""
     words = words_gen(s)
     for eachWord in words:
+
         new_w = caesar_gen_words(eachWord, key)
         msg = msg + new_w
         msg = msg + " "
+
     return msg
 
 # converts words back to readable form        
@@ -54,10 +59,13 @@ def gen_msg(w,key):
         letters.append(x)
         c=c+1
     for each_element in letters:
+
         t = ord(each_element)-97
         t = (t-key)%26
         ch = chr(t+97)
+
         new_w = new_w+ch
+
     return new_w
 
 # converts sentence back to readable form
@@ -67,7 +75,9 @@ def final_msg(s,key):
     msg = ""
     words = words_gen(s)
     for eachWord in words:
+
         new_w = gen_msg(eachWord, key)
         msg = msg + new_w
         msg = msg + " "
+
     return msg
