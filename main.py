@@ -24,10 +24,10 @@ if __name__ == "__main__":
     ch = input("Enter your choice(1/2): ")
 
     while True:
+        
         try:
             key = int(input("Enter the Key: "))
             break
-        
         except:
             print("Enter A Valid Key ")
 
