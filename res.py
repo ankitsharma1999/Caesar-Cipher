@@ -13,6 +13,7 @@ def words_gen(s):
         c+=1
     words = words[1:]
     return words
+    #return print(s.split(' '))
 
 # converts words to caesar cipher
 def caesar_gen_words(w,key):
@@ -81,3 +82,4 @@ def final_msg(s,key):
         msg = msg + " "
 
     return msg
+print(words_gen("hi there you"))
